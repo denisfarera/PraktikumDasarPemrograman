@@ -1,8 +1,8 @@
 /*
-P = 2, kita hitung dulu parameter uniknya:
+P = 7, kita hitung dulu parameter uniknya:
 
-Nilai minimal Dasar Pemrograman = 75 + (2 mod 11) = 77
-Nilai minimal wawancara = 70 + (2 mod 11) = 72
+Nilai minimal Dasar Pemrograman = 75 + (7 mod 11) = 82
+Nilai minimal wawancara = 70 + (7 mod 11) = 77
  */
 
 package Pertemuan6;
@@ -31,7 +31,7 @@ public class Tugas2 {
 
         
         if (mahasiswaAktif && !sedangDisanksi) {
-            if (nilaiDaspro >= 77 || punyaSertifikat) {
+            if (nilaiDaspro >= 82 || punyaSertifikat) {
 
                 System.out.println("Anda lolos tahap awal.");
                 System.out.println("Anda dipanggil untuk mengikuti wawancara.");
@@ -39,7 +39,7 @@ public class Tugas2 {
                 System.out.print("Masukkan nilai wawancara: ");
                 nilaiWawancara = sc.nextDouble();
 
-                if (nilaiWawancara >= 72) {
+                if (nilaiWawancara >= 77) {
 
                     System.out.println("Selamat, Anda diterima sebagai asisten praktikum.");
 
