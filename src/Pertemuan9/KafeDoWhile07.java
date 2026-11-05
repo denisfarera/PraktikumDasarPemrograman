@@ -28,7 +28,6 @@ public class KafeDoWhile07 {
         } while (true);
 
         System.out.println("Semua transaksi selesai.");
-
         Denis.close();
     }
 }
