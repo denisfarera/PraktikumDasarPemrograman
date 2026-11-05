@@ -44,5 +44,6 @@ public class Tugas107 {
         }
         System.out.println("Total tiket yang terjual " + totalTiket);
         System.out.println("Total penjualan hari ini: " + totalPenjualan);
+        Denis.close();
     }
 }
