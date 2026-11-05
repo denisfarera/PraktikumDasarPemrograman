@@ -13,14 +13,15 @@ public class Triangle07 {
         int n = Denis.nextInt();
 
         int i = 1;
-        while (i <= n) {
+        i = n;
+        while (i >= 1) {
             int j = 0;
-                while (j < i) {
+            while (j < i) {
                 System.out.print("*");
                 j++;
             }
             System.out.println();
-            i++;
+            i--;
         }
         Denis.close();
     }
