@@ -33,7 +33,6 @@ public class SiakadFor07 {
         System.out.println("Nilai terendah : " + terendah);
         System.out.println("Jumlah mahasiswa lulus : " + jmlLulus);
         System.out.println("Jumlah mahasiswa tidak lulus : " +jmlTidakLulus);
-        
         Denis.close();
     }
 }
