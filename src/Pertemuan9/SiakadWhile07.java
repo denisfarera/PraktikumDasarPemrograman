@@ -45,6 +45,7 @@ public class SiakadWhile07 {
             }
             i++;
         }
+        
         Denis.close();
     } 
 }
