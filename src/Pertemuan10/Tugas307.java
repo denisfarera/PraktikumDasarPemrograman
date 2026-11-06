@@ -57,7 +57,6 @@ public class Tugas307 {
             }
             toko++;
         }
-
         System.out.println("Total barang seluruh toko: " + totalSeluruhBarang);
         System.out.println("Toko dengan barang terbanyak: " + tokoTerbanyak);
         Denis.close();
