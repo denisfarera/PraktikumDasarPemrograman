@@ -38,6 +38,6 @@ public class Tugas207 {
 
         System.out.println("\nTotal pembayaran parkir: Rp " + total);
 
-
+        Denis.close();
     }
 }
