@@ -32,6 +32,7 @@ public class Triangle07 {
             System.out.println();
             i--;
         }
+        
         Denis.close();
     }
 }
