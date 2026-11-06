@@ -15,5 +15,7 @@ public class MenghitungLuasPersegiPanjang02 {
 
         luas=panjang*lebar;
         System.out.println("Luas persegi adalah"+luas);
+        
+        sc.close();
     }
 }

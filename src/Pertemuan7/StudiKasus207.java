@@ -52,5 +52,7 @@ public class StudiKasus207 {
             pesan = "Status : Tidak ada kegiatan";
         }
         System.out.println(pesan);
+
+        Denis.close();
     }
 }

@@ -65,5 +65,6 @@ public class Tugas1 {
         System.out.println("\n=== HASIL PEMBELIAN ===");
         System.out.println("Diskon       : " + diskon + "%");
         
+        sc.close();
     }
 }

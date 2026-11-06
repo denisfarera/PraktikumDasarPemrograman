@@ -37,6 +37,8 @@ public class nestedUjianSkripsi02 {
         }
 
         System.out.println(pesan);
+
+        sc.close();
     }
 }
 
@@ -44,5 +46,5 @@ public class nestedUjianSkripsi02 {
 Rumus =
 Syarat minimal log bimbingan Pembimbing 1 = 6 + (P mod 5)   → gantikan angka 8 pada contoh 
 Syarat minimal log bimbingan Pembimbing 2 = 3 + (P mod 3)   → gantikan angka 4 pada contoh 
-absen saya 02
+absen saya 07
 */

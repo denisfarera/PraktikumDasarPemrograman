@@ -21,5 +21,6 @@ public class StudiKasus1 {
 
     System.out.println("Total gaji yang diterima: " + totalGaji);
 
+    input.close();
     }
 }

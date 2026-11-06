@@ -15,5 +15,7 @@ public class MenghitungTotalBayar02 {
         potongan = (int) diskon*harga;
         jml_bayar=harga-potongan;
         System.out.println("Jumlah yang harus anda bayar adalah Rp "+ jml_bayar);
+
+        sc.close();
     }
 }

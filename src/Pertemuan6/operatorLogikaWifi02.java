@@ -22,5 +22,6 @@ public class operatorLogikaWifi02 {
         } else {
             System.out.println("Akses Wifi ditolak");
         }
+        sc.close();
     }
 }

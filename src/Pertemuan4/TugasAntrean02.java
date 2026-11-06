@@ -27,6 +27,6 @@ public class TugasAntrean02 {
                 System.out.println("Layanan tidak tersedia");
                 break;
         }
-
+        sc.close();
     }
 }

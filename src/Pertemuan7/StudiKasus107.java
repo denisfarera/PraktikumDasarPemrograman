@@ -33,6 +33,7 @@ public class StudiKasus107 {
             kurang = totalBayar - uangBayar;
             System.out.println("Uang tidak cukup kurang Rp : " + kurang);
         }
+        Denis.close();
     }
 }
 

@@ -15,5 +15,6 @@ public class tugas2Pemilihan02 {
         } else {
             System.out.println("KRS Valid");
         }
+        sc.close();
     }
 }

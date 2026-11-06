@@ -62,6 +62,7 @@ public class Tugas2 {
             System.out.println("Status mahasiswa tidak memenuhi syarat.");
             System.out.println("Mahasiswa harus aktif dan tidak sedang mendapatkan sanksi akademik.");
         }
+        sc.close();
     }
 }
 

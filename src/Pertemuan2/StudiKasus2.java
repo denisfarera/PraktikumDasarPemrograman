@@ -38,5 +38,7 @@ public class StudiKasus2 {
         System.out.println("Luas Taman: " + luasPersegi + " m2");
         System.out.println("Luas Tanah Digunakan: " + luasDigunakan + " m2");
         System.out.println("Luas Tidak Digunakan: " + luasTidakDigunakan + " m2");
+
+        input.close();
     }
 }

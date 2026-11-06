@@ -27,5 +27,6 @@ public class PemilihanIfElse02 {
         } else if (semester ==8) {
             System.out.println("KRS semester 8 ditampilkan");
         }
+        sc.close();
     }
 }

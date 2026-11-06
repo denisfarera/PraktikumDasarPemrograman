@@ -13,5 +13,7 @@ public class tugas1Pemilihan02 {
         String pesan = uktLunas ? "Pembayaran UKT Terverivikasi \nSilahkan cetak KRS dan minta tanda tangan DPA" : "";
 
         System.out.println(pesan);
+
+        sc.close();
     }
 }

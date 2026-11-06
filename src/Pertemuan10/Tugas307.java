@@ -16,7 +16,7 @@ public class Tugas307 {
         } while (jumlahToko < 1);
 
         int totalSeluruhBarang = 0;
-        int barangTerbanyak = -1;
+        int barangTerbanyak = 0;
         int tokoTerbanyak = 0;
 
         int toko = 1;
@@ -57,7 +57,7 @@ public class Tugas307 {
             }
             toko++;
         }
-        
+
         System.out.println("Total barang seluruh toko: " + totalSeluruhBarang);
         System.out.println("Toko dengan barang terbanyak: " + tokoTerbanyak);
         Denis.close();

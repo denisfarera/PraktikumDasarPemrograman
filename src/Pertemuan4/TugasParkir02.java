@@ -14,5 +14,6 @@ public class TugasParkir02 {
         } else {
             System.out.println("Total Bayar : Rp" + ((lamaParkir-2)*1000+2000));
         }
+        sc.close();
     }
 }

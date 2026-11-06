@@ -23,7 +23,7 @@ public class TugasNomor1 {
 
         System.out.println("Cicilan Perbulan ="+cicilan);
 
-
+        sc.close();
 
     }
 }

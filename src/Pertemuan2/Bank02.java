@@ -20,5 +20,7 @@ public class Bank02 {
 
         System.out.println("Bunga adalah "+bunga);
         System.out.println("Jumlah tabungan akhir aadalah "+jml_tabungan_akhir);
+
+        sc.close();
     }
 }

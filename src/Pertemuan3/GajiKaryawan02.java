@@ -16,5 +16,6 @@ public class GajiKaryawan02 {
         System.out.println("Bonus Bulanan anda adalah Rp "+bonus);
         System.out.println("Gaji yang diterima adalah Rp "+totGaji);
 
+        sc.close();
     }
 }

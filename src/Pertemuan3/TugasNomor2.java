@@ -17,5 +17,7 @@ public class TugasNomor2 {
         total = biayaCetak + biayaJilid;
 
         System.out.println("Total biaya: "+total);
+
+        sc.close();
     }
 }

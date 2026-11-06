@@ -29,6 +29,6 @@ public class nestedAksesLab02 {
         } else {
             System.out.println("Akses ditolak: status mahasiswa tidak memenuhi syarat");
         }
-
+        sc.close();
     }
 }
