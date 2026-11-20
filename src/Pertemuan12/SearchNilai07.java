@@ -1,3 +1,5 @@
+//50 + (P mod 50) = 51
+
 package Pertemuan12;
 
 import java.util.Scanner;
@@ -6,7 +8,7 @@ public class SearchNilai07 {
     public static void main(String[] args) {
         Scanner Denis = new Scanner(System.in);
         int[] nilai = { 78, 65, 90, 55, 88, 72 };
-        int key = 90;
+        int key = 51;
         boolean ditemukan = false;
         for (int i = 0; i < nilai.length; i++) {
             if (nilai[i] == key) {
@@ -18,6 +20,5 @@ public class SearchNilai07 {
         if (!ditemukan) {
             System.out.println("Nilai " + key + " tidak ditemukan.");
         }
-        Denis.close();
     }
 }
