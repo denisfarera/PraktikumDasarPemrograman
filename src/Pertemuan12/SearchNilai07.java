@@ -2,11 +2,8 @@
 
 package Pertemuan12;
 
-import java.util.Scanner;
-
 public class SearchNilai07 {
     public static void main(String[] args) {
-        Scanner Denis = new Scanner(System.in);
         int[] nilai = { 78, 65, 90, 55, 88, 72 };
         int key = 51;
         boolean ditemukan = false;
