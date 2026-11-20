@@ -2,6 +2,7 @@
 
 package Pertemuan12;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SearchNilai07 {
@@ -29,7 +30,8 @@ public class SearchNilai07 {
             }
         }
         if (!ditemukan) {
-            System.out.println("Nilai " + key + " tidak ditemukan.");
+            System.out.println("Nilai yang dicari tidak ditemukan: " + key + " tidak ada di dalam array "
+                    + Arrays.toString(nilai) + " (" + nilai.length + " elemen telah diperiksa).");
         }
 
     }
