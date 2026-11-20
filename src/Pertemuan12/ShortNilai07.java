@@ -11,7 +11,7 @@ public class ShortNilai07 {
                 if (nilai[j] > nilai[j + 1]) {
                     int temp = nilai[j];
                     nilai[j] = nilai[j + 1];
-                    nilai[j + 1] = temp;
+                    nilai[j + 1] = temp; 
                 }
             }
         }
