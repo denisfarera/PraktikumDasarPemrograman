@@ -1,3 +1,6 @@
+//7 ; 7+8 ; −(1+(7 mod 7)) ; 20+(7 mod 15)
+//7; 15; -1; 21; 
+
 package Pertemuan12;
 
 import java.util.Arrays;
@@ -5,10 +8,10 @@ import java.util.Arrays;
 public class ArrayBilangan07 {
     public static void main(String[] args) {
         int[] bil = new int[4];
-        bil[0] = 5;
-        bil[1] = 13;
-        bil[2] = -7;
-        bil[3] = 17;
+        bil[0] = 7;
+        bil[1] = 15;
+        bil[2] = -1;
+        bil[3] = 21;
 
         for (int i = 0; i < bil.length; i++) {
             System.out.println("bil[" + i + "] = " + bil[i]);

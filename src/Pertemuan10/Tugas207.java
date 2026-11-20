@@ -8,7 +8,7 @@ public class Tugas207 {
         int n;
 
         do {
-            System.out.print("Masukkan nilai n (minimal 1) : ");
+            System.out.print("Masukkan nilai n (minimal 4) : ");
             n = Denis.nextInt();
             if (n < 3) {
                 System.out.println("Masukkan ulang nilai n (nilai n harus minimal 1)");

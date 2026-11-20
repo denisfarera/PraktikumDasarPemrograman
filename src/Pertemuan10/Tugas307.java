@@ -11,13 +11,13 @@ public class Tugas307 {
             System.out.print("Masukkan jumlah toko (minimal 1): ");
             jumlahToko = Denis.nextInt();
             if (jumlahToko < 1) {
-                System.out.print("Jumlah toko harus minimal 1");
+                System.out.print("Jumlah toko harus minimal 1 ");
             }
         } while (jumlahToko < 1);
 
         int totalSeluruhBarang = 0;
-        int barangTerbanyak = 0;
-        int tokoTerbanyak = 0;
+        int barangTerbanyak = -1;
+        int tokoTerbanyak = 1;
 
         int toko = 1;
         while (toko <= jumlahToko) {
