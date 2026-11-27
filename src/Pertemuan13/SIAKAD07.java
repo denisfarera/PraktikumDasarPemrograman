@@ -5,9 +5,28 @@ import java.util.Scanner;
 public class SIAKAD07 {
     public static void main(String[] args) {
         Scanner Denis = new Scanner(System.in);
-        int[][] nilai = new int[4][3];
+        int jumlahMhs, jumlahMatkul;
+
+        do {
+            System.out.print("Masukkan jumlah mahasiswa: ");
+            jumlahMhs = Denis.nextInt();
+            if (jumlahMhs < 1) {
+                System.out.println("Jumlah mahasiswa minimal 1!");
+            }
+        } while (jumlahMhs < 1);
+
+        do {
+            System.out.print("Masukkan jumlah mata kuliah: ");
+            jumlahMatkul = Denis.nextInt();
+            if (jumlahMatkul < 1) {
+                System.out.println("Jumlah mata kuliah minimal 1!");
+            }
+        } while (jumlahMatkul < 1);
+
+        int[][] nilai = new int[jumlahMhs][jumlahMatkul];
+
         for (int i = 0; i < nilai.length; i++) {
-            System.out.println("Input nilai mahasiswa ke-" + (i + 1));
+            System.out.println("\nInput nilai mahasiswa ke-" + (i + 1));
             double totalPerSiswa = 0;
 
             for (int j = 0; j < nilai[i].length; j++) {
