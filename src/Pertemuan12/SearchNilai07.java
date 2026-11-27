@@ -2,24 +2,37 @@
 
 package Pertemuan12;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SearchNilai07 {
     public static void main(String[] args) {
-        Scanner Denis = new Scanner(System.in);
-        int[] nilai = { 78, 65, 90, 55, 88, 72 };
-        int key = 57;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan banyaknya elemen array: ");
+        int n = input.nextInt();
+        int[] nilai = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Masukkan nilai ke-" + (i + 1) + ": ");
+            nilai[i] = input.nextInt();
+        }
+
+        System.out.print("Masukkan nilai yang dicari (key): ");
+        int key = input.nextInt();
         boolean ditemukan = false;
+
         for (int i = 0; i < nilai.length; i++) {
             if (nilai[i] == key) {
-                System.out.println("Nilai " + key + " ditemukan pada indeks ke-" + i);
+                System.out.println("Nilai " + key
+                        + " ditemukan pada indeks ke-" + i);
                 ditemukan = true;
                 break;
             }
         }
         if (!ditemukan) {
-            System.out.println("Nilai " + key + " tidak ditemukan.");
+            System.out.println("Nilai yang dicari tidak ditemukan: " + key + " tidak ada di dalam array "
+                    + Arrays.toString(nilai) + " (" + nilai.length + " elemen telah diperiksa).");
         }
-        Denis.close();
+        input.close();
     }
 }
