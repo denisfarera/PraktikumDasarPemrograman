@@ -12,5 +12,6 @@ public class Numbers07 {
         for (int i = 0; i < myNumbers.length; i++) {
             System.out.println(Arrays.toString(myNumbers));
         }
+        System.out.println(Arrays.toString(myNumbers));
     }
 }
