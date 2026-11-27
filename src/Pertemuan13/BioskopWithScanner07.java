@@ -7,6 +7,7 @@ public class BioskopWithScanner07 {
         Scanner Denis = new Scanner(System.in);
         int baris, kolom, menu;
         String nama, pilihan;
+        boolean kursiTersedia;
         String[][] penonton = new String[4][2];
         int jumlahBaris = penonton.length;
         int jumlahKolom = penonton[0].length;
@@ -25,20 +26,31 @@ public class BioskopWithScanner07 {
                     nama = Denis.nextLine();
 
                     do {
-                        System.out.print("Masukkan baris (1-" + jumlahBaris + "): ");
-                        baris = Denis.nextInt();
-                        if (baris < 1 || baris > jumlahBaris) {
-                            System.out.println("Baris " + baris + " tidak tersedia! Pilih baris 1-" + jumlahBaris + ".");
-                        }
-                    } while (baris < 1 || baris > jumlahBaris);
+                        do {
+                            System.out.print("Masukkan baris (1-" + jumlahBaris + "): ");
+                            baris = Denis.nextInt();
+                            if (baris < 1 || baris > jumlahBaris) {
+                                System.out.println("Baris " + baris + " tidak tersedia! Pilih baris 1-" + jumlahBaris + ".");
+                            }
+                        } while (baris < 1 || baris > jumlahBaris);
 
-                    do {
-                        System.out.print("Masukkan kolom (1-" + jumlahKolom + "): ");
-                        kolom = Denis.nextInt();
-                        if (kolom < 1 || kolom > jumlahKolom) {
-                            System.out.println("Kolom " + kolom + " tidak tersedia! Pilih kolom 1-" + jumlahKolom + ".");
+                        do {
+                            System.out.print("Masukkan kolom (1-" + jumlahKolom + "): ");
+                            kolom = Denis.nextInt();
+                            if (kolom < 1 || kolom > jumlahKolom) {
+                                System.out.println("Kolom " + kolom + " tidak tersedia! Pilih kolom 1-" + jumlahKolom + ".");
+                            }
+                        } while (kolom < 1 || kolom > jumlahKolom);
+
+                        if (penonton[baris - 1][kolom - 1] != null) {
+                            System.out.println("Kursi baris " + baris + ", kolom " + kolom
+                                    + " sudah diisi oleh " + penonton[baris - 1][kolom - 1]
+                                    + "! Silakan pilih kursi lain.");
+                            kursiTersedia = false;
+                        } else {
+                            kursiTersedia = true;
                         }
-                    } while (kolom < 1 || kolom > jumlahKolom);
+                    } while (!kursiTersedia);
 
                     Denis.nextLine();
 
