@@ -8,6 +8,8 @@ public class BioskopWithScanner07 {
         int baris, kolom, menu;
         String nama, pilihan;
         String[][] penonton = new String[4][2];
+        int jumlahBaris = penonton.length;
+        int jumlahKolom = penonton[0].length;
 
         while (true) {
             System.out.println("1. Input data penonton");
@@ -21,16 +23,24 @@ public class BioskopWithScanner07 {
                 while (true) {
                     System.out.print("Masukkan nama: ");
                     nama = Denis.nextLine();
-                    System.out.print("Masukkan baris: ");
-                    baris = Denis.nextInt();
-                    System.out.print("Masukkan kolom: ");
-                    kolom = Denis.nextInt();
-                    Denis.nextLine();
 
-                    if (baris < 1 || baris > 4 || kolom < 1 || kolom > 2) {
-                        System.out.println("Baris harus 1-4 dan kolom harus 1-2!");
-                        continue;
-                    }
+                    do {
+                        System.out.print("Masukkan baris (1-" + jumlahBaris + "): ");
+                        baris = Denis.nextInt();
+                        if (baris < 1 || baris > jumlahBaris) {
+                            System.out.println("Baris " + baris + " tidak tersedia! Pilih baris 1-" + jumlahBaris + ".");
+                        }
+                    } while (baris < 1 || baris > jumlahBaris);
+
+                    do {
+                        System.out.print("Masukkan kolom (1-" + jumlahKolom + "): ");
+                        kolom = Denis.nextInt();
+                        if (kolom < 1 || kolom > jumlahKolom) {
+                            System.out.println("Kolom " + kolom + " tidak tersedia! Pilih kolom 1-" + jumlahKolom + ".");
+                        }
+                    } while (kolom < 1 || kolom > jumlahKolom);
+
+                    Denis.nextLine();
 
                     penonton[baris - 1][kolom - 1] = nama;
 
