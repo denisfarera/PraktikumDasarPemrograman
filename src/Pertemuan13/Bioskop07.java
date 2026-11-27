@@ -19,10 +19,10 @@ public class Bioskop07 {
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
 
         System.out.println(penonton.length);
-        System.out.println("Penonton pada baris ke-3: ");
 
-        for (String i : penonton[2]) {
-            System.out.println(i);
+        for (int i = 0; i < penonton.length; i++) {
+            System.out.println("Penonton pada baris ke-" + (i + 1) + ": " + String.join(", ",
+                    penonton[i]));
         }
 
         for (String[] barisPenonton : penonton) {
