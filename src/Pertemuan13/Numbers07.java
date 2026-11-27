@@ -16,5 +16,9 @@ public class Numbers07 {
             System.out.println("Panjang baris ke-" + (i + 1) + ": " + myNumbers[i].length);
         }
         System.out.println(Arrays.toString(myNumbers));
+        myNumbers[0] = new int[7];
+        System.out.println(myNumbers.length);
+        System.out.println(myNumbers[0].length);
+
     }
 }
